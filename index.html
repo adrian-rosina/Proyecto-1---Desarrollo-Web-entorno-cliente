@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TechMarket</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Tienda - TechMarket</h1>
+</header>
+
+<main>
+
+
+  <section class="filtro">
+    <select id="filtroCategoria">
+      <option value="todas">Todas las categorías</option>
+      <option value="perifericos">Periféricos</option>
+      <option value="pantallas">Pantallas</option>
+      <option value="ordenadores">Ordenadores</option>
+    </select>
+  </section>
+
+
+  <section>
+    <h2>Productos</h2>
+    <div id="listaProductos" class="grid"></div>
+  </section>
+
+
+  <section class="carrito">
+    <h2>Carrito</h2>
+    <ul id="listaCarrito"></ul>
+    <p class="total">Total: <span id="totalCarrito">0</span> €</p>
+  </section>
+
+
+  <section class="formulario">
+    <h2>Finalizar compra</h2>
+    <form id="formCompra">
+      <input type="text" id="nombre" placeholder="Nombre completo">
+      <input type="email" id="email" placeholder="Correo electrónico">
+      <input type="password" id="password" placeholder="Contraseña">
+      <input type="password" id="confirmPassword" placeholder="Confirmar contraseña">
+      <button type="submit">Comprar</button>
+    </form>
+    <div id="mensajesFormulario"></div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
